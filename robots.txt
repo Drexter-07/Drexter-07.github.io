@@ -1,8 +1,14 @@
-# Allowing all search engine bots (Google, Bing, etc.)
+# Allowing all major search engine bots
 User-agent: *
 Disallow:
+Allow: /assets/
+Allow: /public/
+Crawl-delay: 5
 
-# Blocking AI bots 
+# Sitemap for search engines
+Sitemap: https://sahilsiddhant.com/sitemap.xml
+
+# Block AI scrapers and unwanted bots
 User-agent: GPTBot
 Disallow: /
 
